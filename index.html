@@ -1,66 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A. Vairavel | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2f4b5b573.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vairavel.A | Portfolio</title>
+    <link rel="icon" href="assets/profile.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero text-center p-5" id="home">
-    <img src="assets/vairavel.jpg" alt="A. Vairavel" class="profile-img" data-aos="fade-down">
-    <h1 data-aos="fade-up">Hi, I'm A. Vairavel 👋</h1>
-    <p data-aos="fade-up" data-aos-delay="200">CS + Bioinformatics @ VIT | Full Stack Developer | ML Explorer</p>
-    <a href="#projects" class="btn btn-primary mt-3" data-aos="zoom-in">View My Work</a>
-  </section>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-resume-wrapper">
+                    <img src="assets/profile.jpg" alt="Profile Photo" class="hero-img">
+                    <a href="assets/your-resume.pdf" download class="resume-download">
+                        <i class="fas fa-download"></i> DOWNLOAD RESUME
+                    </a>
+                </div>
+                <h1 class="animate-hero">VAIRAVEL.A</h1>
+                <p class="animate-hero">CSE (BIOINFORMATICS) | FULL STACK DEVELOPER</p>
+            <div class="titles animate-hero">
+                <span>STAR STUDENT</span> | 
+                <span>PROGRAMME REPRESENTATIVE</span> | 
+                <span>STUDENT PLACEMENT COORDINATOR</span>
+            </div>
+            <div class="skills animate-hero">
+                <span>MERN STACK</span> • 
+                <span>PYTHON</span> • 
+                <span>JAVA</span> • 
+                <span>DSA</span> • 
+                <span>MACHINE LEARNING</span> • 
+                <span>FLUTTER</span> • 
+                <span>DART</span> • 
+                <span>ANDROID (KOTLIN)</span>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section class="container my-5" id="about">
-    <h2 class="text-center mb-4" data-aos="fade-right">About Me</h2>
-    <p data-aos="fade-up">
-      I'm a 2nd year CS & Bioinformatics student at VIT with a CGPA of 9.7+, Rank 1 in my department.
-      I love building smart apps, solving problems, and exploring ML + web development.
-    </p>
-  </section>
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>ABOUT</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="coding-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">LeetCode Problems Solved</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">GeeksforGeeks Problems Solved</span>
+                    </div>
+                </div>
+                
+                <div class="professional-summary">
+                    <p>Computer Science and Engineering graduate specializing in Full Stack Development with expertise in both frontend and backend technologies. Passionate about solving complex problems through efficient algorithms and clean code architecture.</p>
+                    
+                    <p>Experienced in developing responsive web applications using MERN stack, building machine learning models with Python, and creating mobile applications with Flutter. Strong foundation in data structures, algorithms, and system design principles.</p>
+                    
+                    <p>Currently enhancing my skills in competitive programming while contributing to open-source projects and developing personal projects that solve real-world problems.</p>
+                </div>
+                
+                <div class="coding-profiles">
+                    <a href="https://leetcode.com/yourprofile" target="_blank" class="coding-profile-link">
+                        <img src="assets/leetcode.png" alt="LeetCode Profile" class="coding-logo">
+                    </a>
+                    <a href="https://auth.geeksforgeeks.org/user/yourprofile" target="_blank" class="coding-profile-link">
+                        <img src="assets/gfg.png" alt="GeeksforGeeks Profile" class="coding-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects -->
-  <section class="container my-5" id="projects">
-    <h2 class="text-center mb-4" data-aos="fade-left">Projects</h2>
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>PROJECTS</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-table-container">
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Description</th>
+                            <th>Technologies</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization i am the best i can do it god is always with me</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Genome Analyzer</td>
+                            <td>DNA sequence analysis tool with visualization</td>
+                            <td>Python, BioPython, Flask</td>
+                            <td><a href="#" target="_blank">View <i class="fas fa-external-link-alt"></i></a></td>
+                        </tr>
+                        <!-- Add more projects here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-    <div class="card mb-3" data-aos="zoom-in-up">
-      <div class="card-body">
-        <h5 class="card-title">AI Waste Segregation System</h5>
-        <p class="card-text">AI + ML model to classify waste using image recognition. Built using Python, Flask, and TensorFlow.</p>
-        <a href="#" class="btn btn-outline-primary">GitHub</a>
-      </div>
-    </div>
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>CONTACT</h2>
+                <div class="title-line"></div>
+            </div>
+            <form class="contact-form" action="https://formsubmit.co/vairavel.ap2006@gmail.com" method="POST">
+                <!-- Honeypot field -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Success Redirect -->
+                <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+                
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" placeholder="Message" required></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
 
-    <div class="card mb-3" data-aos="zoom-in-up" data-aos-delay="100">
-      <div class="card-body">
-        <h5 class="card-title">Mess Capacity Management</h5>
-        <p class="card-text">Rust-based web app to monitor mess traffic. PostgreSQL + WebSockets used for real-time data.</p>
-        <a href="#" class="btn btn-outline-primary">GitHub</a>
-      </div>
-    </div>
-  </section>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 VAIRAVEL.A. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
 
-  <!-- Contact -->
-  <section class="container text-center my-5" id="contact">
-    <h2 data-aos="fade-down">Contact Me</h2>
-    <p>Email: vairavel@example.com</p>
-    <p>
-      <a href="https://github.com/vairavel" target="_blank"><i class="fab fa-github fa-2x me-3"></i></a>
-      <a href="https://linkedin.com/in/vairavel" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-    </p>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
